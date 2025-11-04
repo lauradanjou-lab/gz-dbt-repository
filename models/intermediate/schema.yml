@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_orders_margin
+    description: calcul de la marge par order
+    columns:
+      - name: orders_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
+  - name: int_orders_operational
+    description: calcul de la marge opérationnelle par order
+    columns:
+      - name: orders_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
