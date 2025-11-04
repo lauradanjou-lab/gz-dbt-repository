@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: finance_days
+    description: fichier clean pour la finance avec tous les indicateurs calculé par jour
+    columns:
+      - name: date_date
+        description: primary key
+        tests:
+          - unique
+          - not_null
+      - name: total_revenue
+        tests:
+          - not_null
+      - name: average_basket
+        tests:
+          - not_null
+      - name: operational_margin
+        tests:
+          - not_null
+      - name: total_purchase_cost
+        tests:
+          - not_null
+      - name: total_shipping_fees
+        tests:
+          - not_null
+      - name: total_log_cost
+        tests:
+          - not_null
+      - name: total_qty_of_products_sold
+        tests:
+          - not_null
