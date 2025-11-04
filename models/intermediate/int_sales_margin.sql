@@ -10,6 +10,7 @@ select
     date_date
     ,orders_id
     ,products_id
+    ,quantity
     ,revenue
     ,ROUND(quantity*purchase_price,2) AS purchase_cost
     ,ROUND(revenue-quantity*purchase_price,2) AS margin
