@@ -1,5 +1,6 @@
 version: 2
 
+
 models:
   - name: finance_days
     description: fichier clean pour la finance avec tous les indicateurs calculé par jour
