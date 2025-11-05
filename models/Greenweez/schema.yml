@@ -126,3 +126,6 @@ sources:
             description: nombre d'impressions
           - name: click
             description: nombre de clicks
+        tests:
+          - unique:
+              column_name: "(date_date || '-' || campaign_key)"
